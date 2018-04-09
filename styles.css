@@ -1,0 +1,198 @@
+* {
+    font-family: "Playfair Display 700"; 
+}
+.container {
+    margin-top: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+    /* padding: 0; */
+}
+
+.headerAndNavContainer {
+    width: 100%;
+    height: 65px;
+    /* border: 1px black solid; */
+}
+
+.name {
+   width: 18%;
+   height: 65px;
+   margin: 0;
+   float: left;
+   border: 3px black solid;
+   text-align: center;
+   vertical-align: middle;
+   line-height: 65px;
+}
+
+.nav {
+    /* height:50px;
+    width: 50%;*/
+    float: right;
+    /* margin-top: 10px;  */
+}
+
+.nav-link {
+    color: black;    
+}
+
+.profileContainer {
+    margin-top: 50px;
+    position: relative;
+}
+
+.profilePic {
+    /* max-width: 100%;
+    height: auto; */
+    height: 400px;
+    margin-left: 30px;
+}
+
+.orangeText {
+    color: darkorange;
+}
+
+.wordsBesidePicture {
+    width: 75%;
+    float: right;
+    font-size: 800px;
+    position: absolute;
+    top: 330px;
+    left: 340px;
+}
+
+.largFontSize {
+    font-size: 40px;
+} 
+
+.extraLargeFontSize {
+    font-size: 60px;
+}
+
+.lightGrayBackground {
+    background-color: #F6F6F6;
+}
+
+.aboutMe {
+    margin-top: 90px;
+    height: 300px;
+    position: relative;
+}
+
+.aboutMeWords {
+    text-align: center;
+    vertical-align: middle;
+    /* line-height: 65px; */
+    width: 50%;
+    /* margin-right: 0;  */
+    float: left;
+    position: absolute;
+    top: 85px;
+    left: 20px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.descriptionBox {
+    width: 40%;
+    height: 75%;
+    border: 2px black solid;
+    position: absolute;
+    top: 10%;
+    left: 55%;
+    float: right;
+}
+
+.whiteBackground {
+    background-color: white;
+}
+
+.experience {
+    margin-top: 50px;
+    height: auto;
+}
+
+.job {
+    width: 46%;
+    float: left;
+    text-align: center;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 3%;
+    position: relative;
+}
+
+.horizontalLine {
+    background-color: black;
+}
+
+.jobTitle {
+    text-align: left;
+}
+
+.jobPosition {
+    text-align: left;
+    font-style: italic;
+}
+
+.grayLink {
+    text-align: right;
+    height: 20px;
+    position: absolute;
+    left: 95%;
+    top: 20px;
+}
+
+.pictures {
+    width: 100%;
+    margin-bottom: 3%;
+    text-align: center;
+    position: relative;
+    height: auto;
+}
+
+.picture {
+    height: 300px;
+    width: 29%;
+    margin-right: 2%;
+    margin-left: 2%;
+    margin-bottom: 5px;
+    /* position: relative; */
+}
+
+.hoverLayer {
+    display: none;
+    position: absolute;
+    top: 381px;
+    left: 23.5px;
+    opacity: 0.8;
+    background-color: white;
+    height: 300px;
+    width: 29%;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 130px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* h2 {
+    font-family: "Playfair Display 700";
+ } */
+
+ /* div {
+    border: 1px black solid;
+ }
+
+ #grayLink, #basketballIcon, #instgramIcon {
+    height: 100px;
+ } */
