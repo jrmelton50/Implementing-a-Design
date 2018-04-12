@@ -9,13 +9,18 @@ let $etsyPic = $("#etsyPic");
 let $instaPic = $("#instaPic");
 let $snapPic = $("#snapPic");
 let $hoverLayer = $(".hoverLayer");
-let $text = $("<h3>Wish</h3>");
-$text.css({
-    "color": "black",
-    "text-align": "center",
-    "vertical-align": "middle"
-});
-$text.appendTo($hoverLayer);
+let $navItems = $(".nav-item");
+let currentlyActiveNavItem;
+
+
+
+// let $text = $("<h3>Wish</h3>");
+// $text.css({
+//     "color": "black",
+//     "text-align": "center",
+//     "vertical-align": "middle"
+// });
+// $text.appendTo($hoverLayer);
 
 $scLink.click(function() {
     window.open("http://www.serenitycounselingshoals.org/home.html");
@@ -59,25 +64,27 @@ $wishPic.click(function() {
 //     // $hoverLayer.text($text);
 // });
 
-$wishPic.mouseover(function() {
+// $wishPic.mouseover(function() {
+//     $wishPic.css("cursor", "pointer");
+//     $hoverLayer.css("display", "block");
+//     $hoverLayer.text("Wish");
+// });
+
+// $wishPic.mouseout(function() {
+//     $hoverLayer.css("display", "none");
+//     $hoverLayer.text("");
+// });
+
+$wishPic.mouseenter(function() {
     $wishPic.css("cursor", "pointer");
     $hoverLayer.css("display", "block");
+    $hoverLayer.text("Wish");
     // $hoverLayer.text($text);
 });
 
-$wishPic.mouseout(function() {
+$wishPic.mouseleave(function() {
     $hoverLayer.css("display", "none");
 });
-
-// $wishPic.mouseenter(function() {
-//     $wishPic.css("cursor", "pointer");
-//     $hoverLayer.css("display", "block");
-//     // $hoverLayer.text($text);
-// });
-
-// $wishPic.mouseleave(function() {
-//     $hoverLayer.css("display", "none");
-// });
 
 $covalencePic.click(function() {
     window.open("https://covalence.io/");
@@ -118,3 +125,33 @@ $snapPic.click(function() {
 $snapPic.hover(function() {
     $snapPic.css("cursor", "pointer");
 });
+
+$navItems.click(function() {
+    console.log("this.id before = ", this.id);
+    let a = $(this.id);
+    // console.log("currentlyActiveNavItem != undefined is ", currentlyActiveNavItem != undefined);
+    if (currentlyActiveNavItem != undefined) {
+        currentlyActiveNavItem.removeClass("activeItem");
+        currentlyActiveNavItem.addClass("largeBoldText");
+    }
+    else {
+        a.removeClass("largeBoldText"); // not removing class 
+        a.addClass("activeItem");       // not adding class 
+        currentlyActiveNavItem = a;
+        console.log("this after = ", a);
+    }
+});
+
+// function activate(e) {
+//     console.log("e.which before = ", e.which);
+//     console.log("event.this before = ", event.this);
+//     // console.log("currentlyActiveNavItem != undefined is ", currentlyActiveNavItem != undefined);
+//     if (currentlyActiveNavItem != undefined) {
+//         currentlyActiveNavItem.removeClass("activeItem");
+//         currentlyActiveNavItem.addClass("largeBoldText");
+//     }
+//     this.removeClass("largeBoldText");
+//     this.addClass("activeItem");
+//     currentlyActiveNavItem = this;
+//     console.log("this after = ", this);
+// }

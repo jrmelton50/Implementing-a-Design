@@ -14,28 +14,29 @@
 
 <body>
     <div class="container">
-        <div class="headerAndNavContainer">
-            <h3 class="name orangeText">Jessie Melton</h3>
-            <nav class="navbar navbar-expand-lg navbar-light nav">
+        <div class="headerAndNavContainer row">
+            <h3 class="name orangeText col-md-3">Jessie Melton</h3>
+            <div class="col-md-5"></div> <!-- This div is to create space/a gap between the name rectangle and the nav bar-->
+            <nav class="navbar navbar-expand-lg navbar-light nav col-md-4">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
+                    <ul class="navbar-nav">
+                        <li class="nav-item largeBoldText" id="about">
                             <a class="nav-link" href="#">About
                                 <span class="sr-only">(current)</span>
                             </a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item largeBoldText">
                             <a class="nav-link" href="#">Experience</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item largeBoldText">
                             <a class="nav-link" href="#">Work</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item largeBoldText">
                             <a class="nav-link" href="#">Contact</a>
                         </li>
                     </ul>
@@ -62,7 +63,7 @@
             <div class="job">
                 <h4 class="jobTitle">Serenity Counseling, Inc.</h4>
                 <h5 class="jobPosition">Web Designer</h5>
-                <img class="grayLink" id="SCLink"src="./images/icons/linkdarkgray.svg" alt="">
+                <img class="grayLink" id="SCLink" src="./images/icons/linkdarkgray.svg" alt="">
                 <hr class="horizontalLine">
                 <p style="text-align: left"> • Design flyers and brochures
                     <br> • Develop website layout and some backend software</p>
@@ -70,7 +71,7 @@
             <div class="job">
                 <h4 class="jobTitle">Tuscaloosa Metro Animal Shelter</h4>
                 <h5 class="jobPosition">Kennel Technician</h5>
-                <img class="grayLink" id="TMASLink"src="./images/icons/linkdarkgray.svg" alt="">
+                <img class="grayLink" id="TMASLink" src="./images/icons/linkdarkgray.svg" alt="">
                 <hr class="horizontalLine">
                 <p style="text-align: left"> • Prepared cages and carriers according to medical guidelines
                     <br> • Maintained cleanliness and organization of entire kennel area</p>
@@ -78,17 +79,18 @@
             <div class="job">
                 <h4 class="jobTitle">Humane Society of West Alabama</h4>
                 <h5 class="jobPosition">Team Leader</h5>
-                <img class="grayLink" id="HSWALink"src="./images/icons/linkdarkgray.svg" alt="">
+                <img class="grayLink" id="HSWALink" src="./images/icons/linkdarkgray.svg" alt="">
                 <hr class="horizontalLine">
                 <p style="text-align: left"> • Administered medications to animals and managed animal shelter upkeep
-                        <br> • Assigned daily duties to other team members</p>
+                    <br> • Assigned daily duties to other team members</p>
             </div>
             <div class="job">
                 <h4 class="jobTitle">Zaxby's Restaurant</h4>
                 <h5 class="jobPosition">Cook and Cashier</h5>
-                <img class="grayLink" id="ZaxLink"src="./images/icons/linkdarkgray.svg" alt="">
+                <img class="grayLink" id="ZaxLink" src="./images/icons/linkdarkgray.svg" alt="">
                 <hr class="horizontalLine">
-                <p style="text-align: left"> • Enabled kitchen operations to run in a timely manner <br> • Provided excellent customer service</p>
+                <p style="text-align: left"> • Enabled kitchen operations to run in a timely manner
+                    <br> • Provided excellent customer service</p>
             </div>
         </div>
         <div class="pictures">
@@ -100,75 +102,50 @@
             <img class="picture" id="instaPic" src="./pictures/insta.jpg" alt="instagram.com">
             <img class="picture" id="snapPic" src="./pictures/snap.png" alt="snapchat.com">
         </div>
-    </div>
+
+        <form>
+            <h1 class="formHeader">Let's talk</h1>
+            <h5 class="formSmallerHeader">Let's work together
+                <br> jessie.melton@gmail.com</h5>
+            <div class="form-group row">
+                <label for="name" class="col-sm-2 col-form-label"></label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="name" placeholder="Name">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-2 col-form-label"></label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="message" class="col-sm-2 col-form-label"></label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="message" placeholder="Message">
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-10">
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </div>
+                </div>
+        </form>
+        <div class="footer row">
+            <hr class="horizontalLine col-sm-12">
+            <img class="staticPosition col-sm-4" src="./images/icons/dribble.svg" alt="">
+            <h5 class="staticPosition col-sm-4" >Thanks for visiting!</h5>
+            <img class="staticPosition col-sm-4" src="./images/icons/instagram.svg" alt="">
+        </div>
+        </div>
 
 
-
-
-    <!-- <svg id="grayLink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53.15 53.14">
-        <defs>
-            <style>
-                .cls-1 {
-                    fill: #262626;
-                }
-            </style>
-        </defs>
-        <title>linkdarkgray</title>
-        <g id="Layer_2" data-name="Layer 2">
-            <g id="Layer_1-2" data-name="Layer 1">
-                <path class="cls-1" d="M39.33,32a2.49,2.49,0,0,1-1.76-4.25l9.56-9.56L35,6,25.6,15.37a2.49,2.49,0,0,1-3.52-3.52L33.2.73a2.49,2.49,0,0,1,3.52,0L52.42,16.42a2.49,2.49,0,0,1,0,3.52L41.09,31.27A2.48,2.48,0,0,1,39.33,32Z"
-                />
-                <path class="cls-1" d="M18.19,53.14a2.49,2.49,0,0,1-1.76-.73L.73,36.72a2.49,2.49,0,0,1,0-3.52L12.06,21.87a2.49,2.49,0,1,1,3.52,3.52L6,35,18.19,47.13l9.35-9.35a2.49,2.49,0,1,1,3.52,3.53L19.95,52.41A2.49,2.49,0,0,1,18.19,53.14Z"
-                />
-                <path class="cls-1" d="M21.58,34.05a2.49,2.49,0,0,1-1.76-4.25l10-10a2.49,2.49,0,0,1,3.53,3.52l-10,10A2.48,2.48,0,0,1,21.58,34.05Z"
-                />
-            </g>
-        </g>
-    </svg>
-    <svg id="basketballIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53.64 53.57">
-        <defs>
-            <style>
-                .cls-1 {
-                    fill: #333;
-                }
-            </style>
-        </defs>
-        <title>dribble</title>
-        <g id="Layer_2" data-name="Layer 2">
-            <g id="Layer_1-2" data-name="Layer 1">
-                <path class="cls-1" d="M26.82,0A26.78,26.78,0,1,0,53.64,26.78,26.83,26.83,0,0,0,26.82,0ZM44.55,12.35A22.75,22.75,0,0,1,49.72,26.6a53.6,53.6,0,0,0-16-.74l-.49-1.18c-.48-1.12-1-2.22-1.52-3.31C40.23,17.92,44.07,13,44.55,12.35ZM26.82,3.94A22.83,22.83,0,0,1,42,9.71c-.41.59-3.86,5.21-12,8.26A122.09,122.09,0,0,0,21.45,4.58,22.91,22.91,0,0,1,26.82,3.94ZM17.08,6.11a146,146,0,0,1,8.49,13.23A85.55,85.55,0,0,1,4.4,22.13,23,23,0,0,1,17.08,6.11ZM3.91,26.82c0-.23,0-.47,0-.7a84.61,84.61,0,0,0,23.54-3.26c.66,1.28,1.28,2.58,1.86,3.88l-.9.27C16.61,30.83,10.32,41.23,9.8,42.11A22.77,22.77,0,0,1,3.91,26.82ZM26.82,49.69a22.81,22.81,0,0,1-14.06-4.83c.41-.84,5.05-9.79,18-14.29l.15-.05a95,95,0,0,1,4.89,17.35A22.81,22.81,0,0,1,26.82,49.69Zm12.8-3.91a98.63,98.63,0,0,0-4.45-16.31,33.66,33.66,0,0,1,14.27,1A22.91,22.91,0,0,1,39.62,45.78Z"
-                />
-            </g>
-        </g>
-    </svg>
-    <svg id="instgramIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53.27 53.27">
-        <defs>
-            <style>
-                .cls-1 {
-                    fill: #333;
-                }
-            </style>
-        </defs>
-        <title>Asset 1</title>
-        <g id="Layer_2" data-name="Layer 2">
-            <g id="Layer_1-2" data-name="Layer 1">
-                <path class="cls-1" d="M26.63,4.8c7.11,0,8,0,10.76.16a14.74,14.74,0,0,1,4.95.92,8.25,8.25,0,0,1,3.06,2,8.25,8.25,0,0,1,2,3.06,14.74,14.74,0,0,1,.92,4.95c.13,2.81.16,3.65.16,10.76s0,8-.16,10.76a14.74,14.74,0,0,1-.92,4.95,8.82,8.82,0,0,1-5.05,5.05,14.74,14.74,0,0,1-4.95.92c-2.81.13-3.65.16-10.76.16s-8,0-10.76-.16a14.74,14.74,0,0,1-4.95-.92,8.25,8.25,0,0,1-3.06-2,8.26,8.26,0,0,1-2-3.06A14.74,14.74,0,0,1,5,37.4c-.13-2.81-.16-3.65-.16-10.76s0-8,.16-10.76a14.74,14.74,0,0,1,.92-4.95,8.25,8.25,0,0,1,2-3.06,8.25,8.25,0,0,1,3.06-2A14.74,14.74,0,0,1,15.87,5c2.81-.13,3.65-.16,10.76-.16m0-4.8c-7.23,0-8.14,0-11,.16A19.55,19.55,0,0,0,9.19,1.4,13.05,13.05,0,0,0,4.47,4.47,13.06,13.06,0,0,0,1.4,9.19,19.55,19.55,0,0,0,.16,15.65C0,18.49,0,19.4,0,26.63s0,8.14.16,11A19.55,19.55,0,0,0,1.4,44.08,13.06,13.06,0,0,0,4.47,48.8a13.05,13.05,0,0,0,4.72,3.07,19.55,19.55,0,0,0,6.47,1.24c2.84.13,3.75.16,11,.16s8.14,0,11-.16a19.55,19.55,0,0,0,6.47-1.24,13.62,13.62,0,0,0,7.79-7.79,19.55,19.55,0,0,0,1.24-6.47c.13-2.84.16-3.75.16-11s0-8.14-.16-11a19.55,19.55,0,0,0-1.24-6.47A13.06,13.06,0,0,0,48.8,4.47,13.05,13.05,0,0,0,44.08,1.4,19.55,19.55,0,0,0,37.62.16C34.78,0,33.87,0,26.63,0"
-                />
-                <path class="cls-1" d="M26.63,13A13.68,13.68,0,1,0,40.31,26.63,13.68,13.68,0,0,0,26.63,13m0,22.56a8.88,8.88,0,1,1,8.88-8.88,8.88,8.88,0,0,1-8.88,8.88"
-                />
-                <path class="cls-1" d="M44,12.42a3.2,3.2,0,1,1-3.2-3.2,3.2,3.2,0,0,1,3.2,3.2" />
-            </g>
-        </g>
-    </svg> -->
-    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53.15 53.14"><defs><style>.cls-1{fill:#c6c6c6;}</style></defs><title>linkgray</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M39.33,32a2.49,2.49,0,0,1-1.76-4.25l9.56-9.56L35,6,25.6,15.37a2.49,2.49,0,0,1-3.52-3.52L33.2.73a2.49,2.49,0,0,1,3.52,0L52.42,16.42a2.49,2.49,0,0,1,0,3.52L41.09,31.27A2.48,2.48,0,0,1,39.33,32Z"/><path class="cls-1" d="M18.19,53.14a2.49,2.49,0,0,1-1.76-.73L.73,36.72a2.49,2.49,0,0,1,0-3.52L12.06,21.87a2.49,2.49,0,1,1,3.52,3.52L6,35,18.19,47.13l9.35-9.35a2.49,2.49,0,1,1,3.52,3.53L19.95,52.41A2.49,2.49,0,0,1,18.19,53.14Z"/><path class="cls-1" d="M21.58,34.05a2.49,2.49,0,0,1-1.76-4.25l10-10a2.49,2.49,0,0,1,3.53,3.52l-10,10A2.48,2.48,0,0,1,21.58,34.05Z"/></g></g></svg> -->
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-    <script src="app.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+        <script src="app.js"></script>
 </body>
 
 </html>
