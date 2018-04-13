@@ -16,7 +16,8 @@
     <div class="container">
         <div class="headerAndNavContainer row">
             <h3 class="name orangeText col-md-3">Jessie Melton</h3>
-            <div class="col-md-5"></div> <!-- This div is to create space/a gap between the name rectangle and the nav bar-->
+            <div class="col-md-5"></div>
+            <!-- This div is to create space/a gap between the name rectangle and the nav bar-->
             <nav class="navbar navbar-expand-lg navbar-light nav col-md-4">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -43,109 +44,133 @@
                 </div>
             </nav>
         </div>
-        <div class="profileContainer">
+        <div class="profileContainer row">
             <img class="profilePic" src="./pictures/profile.png" alt="Jessie Melton">
-            <div class="wordsBesidePicture">
+            <div class="wordsBesidePicture col-md-8">
                 <h1 class="orangeText extraLargeFontSize">Developer and Designer</h1>
                 <h2 class="largeFontSize">CURRENTLY IN TUSCALOOSA AL.</h2>
             </div>
         </div>
-        <div class="lightGrayBackground aboutMe">
-            <div class="aboutMeWords">
-                <h1>Hello</h1>
-                <h4>Jessie Melton</h3>
-                    <p>The University of Alabama
+        <div class="lightGrayBackground aboutMeArea row">
+            <div class="col-md-1"></div>
+            <div class="aboutMeWords col-md-5">
+                <h1 id="aboutMeHeader">Hello</h1>
+                <h4 id="aboutMeName">Jessie Melton</h3>
+                    <p id="aboutMeDegree">The University of Alabama
                         <br> Bachelor of Science in Computer Science</p>
             </div>
-            <div class="descriptionBox whiteBackground">Something about me</div>
+            <div class="descriptionBox whiteBackground col-md-5">Something about me</div>
+            <div class="col-md-1"></div>
         </div>
         <div class="experience">
-            <div class="job">
-                <h4 class="jobTitle">Serenity Counseling, Inc.</h4>
-                <h5 class="jobPosition">Web Designer</h5>
-                <img class="grayLink" id="SCLink" src="./images/icons/linkdarkgray.svg" alt="">
-                <hr class="horizontalLine">
-                <p style="text-align: left"> • Design flyers and brochures
-                    <br> • Develop website layout and some backend software</p>
+            <div class="row">
+                <div class="job col-md-6">
+                    <h4 class="jobTitle">Serenity Counseling, Inc.</h4>
+                    <h5 class="jobPosition">Web Designer</h5>
+                    <img class="grayLink" id="SCLink" src="./images/icons/linkdarkgray.svg" alt="">
+                    <hr class="horizontalLine">
+                    <p style="text-align: left"> • Design flyers and brochures
+                        <br> • Develop website layout and some backend software</p>
+                </div>
+                <!-- <div class="col-md-2"></div> -->
+                <div class="job col-md-6">
+                    <h4 class="jobTitle">Tuscaloosa Metro Animal Shelter</h4>
+                    <h5 class="jobPosition">Kennel Technician</h5>
+                    <img class="grayLink" id="TMASLink" src="./images/icons/linkdarkgray.svg" alt="">
+                    <hr class="horizontalLine">
+                    <p style="text-align: left"> • Prepared cages and carriers according to medical guidelines
+                        <br> • Maintained cleanliness and organization of entire kennel area</p>
+                </div>
             </div>
-            <div class="job">
-                <h4 class="jobTitle">Tuscaloosa Metro Animal Shelter</h4>
-                <h5 class="jobPosition">Kennel Technician</h5>
-                <img class="grayLink" id="TMASLink" src="./images/icons/linkdarkgray.svg" alt="">
-                <hr class="horizontalLine">
-                <p style="text-align: left"> • Prepared cages and carriers according to medical guidelines
-                    <br> • Maintained cleanliness and organization of entire kennel area</p>
-            </div>
-            <div class="job">
-                <h4 class="jobTitle">Humane Society of West Alabama</h4>
-                <h5 class="jobPosition">Team Leader</h5>
-                <img class="grayLink" id="HSWALink" src="./images/icons/linkdarkgray.svg" alt="">
-                <hr class="horizontalLine">
-                <p style="text-align: left"> • Administered medications to animals and managed animal shelter upkeep
-                    <br> • Assigned daily duties to other team members</p>
-            </div>
-            <div class="job">
-                <h4 class="jobTitle">Zaxby's Restaurant</h4>
-                <h5 class="jobPosition">Cook and Cashier</h5>
-                <img class="grayLink" id="ZaxLink" src="./images/icons/linkdarkgray.svg" alt="">
-                <hr class="horizontalLine">
-                <p style="text-align: left"> • Enabled kitchen operations to run in a timely manner
-                    <br> • Provided excellent customer service</p>
+            <div class="row">
+                <div class="job col-md-6">
+                    <h4 class="jobTitle">Humane Society of West Alabama</h4>
+                    <h5 class="jobPosition">Team Leader</h5>
+                    <img class="grayLink" id="HSWALink" src="./images/icons/linkdarkgray.svg" alt="">
+                    <hr class="horizontalLine">
+                    <p style="text-align: left"> • Administered medications to animals and managed animal shelter upkeep
+                        <br> • Assigned daily duties to other team members</p>
+                </div>
+                <!-- <div class="col-md-1"></div> -->
+                <div class="job col-md-6">
+                    <h4 class="jobTitle">Zaxby's Restaurant</h4>
+                    <h5 class="jobPosition">Cook and Cashier</h5>
+                    <img class="grayLink" id="ZaxLink" src="./images/icons/linkdarkgray.svg" alt="">
+                    <hr class="horizontalLine">
+                    <p style="text-align: left"> • Enabled kitchen operations to run in a timely manner
+                        <br> • Provided excellent customer service</p>
+                </div>
             </div>
         </div>
         <div class="pictures">
             <div class="hoverLayer"></div>
-            <img class="picture" id="wishPic" src="./pictures/wish2.png" alt="wish.com">
-            <img class="picture" id="covalencePic" src="./pictures/covalence1.jpg" alt="covalence.com">
-            <img class="picture" id="facebookPic" src="./pictures/facebook.jpg" alt="facebook.com">
-            <img class="picture" id="etsyPic" src="./pictures/Etsy1.png" alt="etsy.com">
-            <img class="picture" id="instaPic" src="./pictures/insta.jpg" alt="instagram.com">
-            <img class="picture" id="snapPic" src="./pictures/snap.png" alt="snapchat.com">
+            <div class="row">
+                <img class="picture col-md-4" id="wishPic" src="./pictures/wish2.png" alt="wish.com">
+                <img class="picture col-md-4" id="covalencePic" src="./pictures/covalence1.jpg" alt="covalence.com">
+                <img class="picture col-md-4" id="facebookPic" src="./pictures/facebook.jpg" alt="facebook.com">
+            </div>
+            <div class="row">
+                <img class="picture col-md-4" id="etsyPic" src="./pictures/Etsy1.png" alt="etsy.com">
+                <img class="picture col-md-4" id="instaPic" src="./pictures/insta.jpg" alt="instagram.com">
+                <img class="picture col-md-4" id="snapPic" src="./pictures/snap.png" alt="snapchat.com">
+            </div>
         </div>
 
         <form>
-            <h1 class="formHeader">Let's talk</h1>
-            <h5 class="formSmallerHeader">Let's work together
-                <br> jessie.melton@gmail.com</h5>
-            <div class="form-group row">
-                <label for="name" class="col-sm-2 col-form-label"></label>
-                <div class="col-sm-10">
-                    <input type="text" class="form-control" id="name" placeholder="Name">
+            <div class="row">
+                <h1 class="formHeader col-md-5" style="margin-top: auto;">Let's talk</h1>
+                <div class="col-md-2"></div>
+                <h3 class="formSmallerHeader col-md-4" style="margin-top: auto;">Let's work together
+                    <br> jessie.melton@gmail.com</h3>
+            </div>
+            <div class="form-group row noBottomMargin">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <label for="name" class="col-form-label"></label>
+                    <!-- <textarea name="name" id="name" cols="88" rows="2" placeholder="Name"></textarea> -->
+                    <input class="lightGrayBackground largeWidth mediumHeight smallLeftPadding roundedEdges grayBorder" type="text" class="form-control" id="name" placeholder="Name">
                 </div>
             </div>
-            <div class="form-group row">
-                <label for="inputEmail3" class="col-sm-2 col-form-label"></label>
-                <div class="col-sm-10">
-                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+            <div class="form-group row noBottomMargin">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <label for="email" class="col-form-label"></label>
+                    <!-- <textarea name="email" id="email" cols="88" rows="2" placeholder="Email"></textarea> -->
+                    <input class="lightGrayBackground largeWidth mediumHeight smallLeftPadding roundedEdges grayBorder" type="email" class="form-control" id="email" placeholder="Email">
                 </div>
             </div>
-            <div class="form-group row">
-                <label for="message" class="col-sm-2 col-form-label"></label>
-                <div class="col-sm-10">
-                    <input type="text" class="form-control" id="message" placeholder="Message">
+            <div class="form-group row noBottomMargin">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <label for="message" class="col-form-label"></label>
+                    <textarea class="grayBorder roundedEdges lightGrayBackground largeWidth smallLeftPadding smallTopPadding" name="message" id="message" cols="89" rows="10" placeholder="Message"></textarea>
+                    <!-- <input type="text" class="form-control largeHeight" id="message" placeholder="Message"> -->
                 </div>
-                <div class="form-group row">
-                    <div class="col-sm-10">
-                        <button type="submit" class="btn btn-primary">Send</button>
-                    </div>
+            </div>
+            <div class="form-group row noBottomMargin">
+                <div class="col-md-8"></div>
+                <div class="col-md-3 smallTopMargin">
+                    <button type="submit" class="btn orangeColor largeWhiteText largeButton">Send</button>
                 </div>
+            </div>
         </form>
         <div class="footer row">
-            <hr class="horizontalLine col-sm-12">
-            <img class="staticPosition col-sm-4" src="./images/icons/dribble.svg" alt="">
-            <h5 class="staticPosition col-sm-4" >Thanks for visiting!</h5>
-            <img class="staticPosition col-sm-4" src="./images/icons/instagram.svg" alt="">
+            <hr class="horizontalLine col-md-12">
+            <div class="col-md-3"></div>
+            <img class="staticPosition col-md-2 smallFooterPicture mediumBottomMargin" src="./images/icons/dribble.svg" alt="">
+            <h5 class="staticPosition col-md-2 smallTopMargin">Thanks for visiting!</h5>
+            <img class="staticPosition col-md-2 smallFooterPicture mediumBottomMargin" src="./images/icons/instagram.svg" alt="">
         </div>
-        </div>
+    </div>
 
 
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-            crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-            crossorigin="anonymous"></script>
-        <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>

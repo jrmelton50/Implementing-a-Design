@@ -58,11 +58,13 @@ $wishPic.click(function() {
     window.open("http://www.wish.com/");
 });
 
-// $wishPic.hover(function() {
-//     $wishPic.css("cursor", "pointer");
-//     $hoverLayer.css("display", "block");
-//     // $hoverLayer.text($text);
-// });
+$wishPic.hover(function() {
+    $wishPic.css("cursor", "pointer");
+    // $wishPic.removeClass("col-md-4");
+    // $hoverLayer.addClass("col-md-4");
+    $hoverLayer.css("display", "block");
+    // $hoverLayer.text($text);
+});
 
 // $wishPic.mouseover(function() {
 //     $wishPic.css("cursor", "pointer");
@@ -75,16 +77,16 @@ $wishPic.click(function() {
 //     $hoverLayer.text("");
 // });
 
-$wishPic.mouseenter(function() {
-    $wishPic.css("cursor", "pointer");
-    $hoverLayer.css("display", "block");
-    $hoverLayer.text("Wish");
-    // $hoverLayer.text($text);
-});
+// $wishPic.mouseenter(function() {
+//     $wishPic.css("cursor", "pointer");
+//     $hoverLayer.css("display", "block");
+//     $hoverLayer.text("Wish");
+//     // $hoverLayer.text($text);
+// });
 
-$wishPic.mouseleave(function() {
-    $hoverLayer.css("display", "none");
-});
+// $wishPic.mouseleave(function() {
+//     $hoverLayer.css("display", "none");
+// });
 
 $covalencePic.click(function() {
     window.open("https://covalence.io/");
